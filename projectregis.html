@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+	div{
+		    height:240px;
+            width:auto;
+            background-color:#FEC5E5;
+            align-items: center;
+            box-sizing: border-box;
+            transition: 1s;
+		}
+		h2{
+			color:black;
+			text-align:center;
+		}
+</style>
+<body>
+	<div>
+	<form method="post" action="projectcomplaintform.html">
+		<h2>New Users Register here</h2>
+<table>
+            <tr>
+                <td><label>User name</label></td>
+                <td>:</td>
+                <td><input type="text"></td>
+            </tr>
+            
+             <tr>
+                <td>password</td>
+                <td>:</td>
+                <td><input type="text"/></td>
+            </tr>
+
+            <tr>
+                <td>Comfirm password</td>
+                <td>:</td>
+                <td><input type="text"/></td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>:</td>
+                <td><input type="radio" name="gender"/>Male       <!--radio form--><!--we use name="gender" attribute for selecting only one option-->
+                    <input type="radio" name="gender"/>Female
+                    <input type="radio" name="gender"/>Other
+                </td>
+            </tr>
+            
+            <tr>
+				<td>Address</td>
+                <td>:</td>
+                <td><textarea rows="3" cols="22" name="address"/></textarea></td>
+            </tr>
+
+            <tr>
+                <td align="center"><input type="Submit"></td>
+            </tr>
+           </table>
+           </form>
+           </div>
+</body>
+</html>

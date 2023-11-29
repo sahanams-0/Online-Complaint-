@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+	div{
+		    height:auto;
+            width:auto;
+            background-color:#FEC5E5;
+            align-items: center;
+            box-sizing: border-box;
+            transition: 1s;
+		}
+		h1{
+			color:black;
+			text-align: center;
+		}
+		
+</style>
+<body>
+	<div>
+<form action="complaintform" method="get">
+	<h1>Complaint Form</h1>
+	<p>Please send us details about the incident you would like to report,
+		 Our Complaint Center will analyze your complaint and take the appropriate measures in 
+		 order that the reported situation will not occur at any other time in the future.</p>
+		 <hr>
+		 
+		 <table>
+            <tr>
+                <td><label>Date of complaint</label></td>
+                <td>:</td>
+                <td><input type="text" name="dcom"></td>
+            </tr>
+
+            <tr>
+                <td><label>Name</label></td>
+                <td>:</td>
+                <td><input type="text" value="" placeholder="Name" name="fname"/></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td>
+                <td>:</td>
+                <td><input type="text" placeholder="email" name="email"></td>
+            </tr>
+            
+            <tr>
+				<td><label>Address</label></td>
+                <td>:</td>
+                <td><textarea rows="3" cols="22" name="addss"  placeholder="street/City/Region/Zipcode/Country"/></textarea></td>
+            </tr>
+				
+				<tr>
+                <td><label>Date of reported Incident</label></td>
+                <td>:</td>
+                <td><input type="text" name="dri"></td>
+            </tr>
+            
+            <tr>
+				<td><label>Type of complaint</label></td>
+				<td>:</td>
+                <td><select name="tc">
+                    <option value="Civil" name="tc">Civil</option>  <!--option form-->
+                    <option value="Cyber" name="tc">Cyber</option>
+                    <option value="Human rights" name="tc">Human rights</option>
+                    <option value="Consumer" name="tc">Consumer</option>
+                    <option value="Labour" name="tc">Labour</option>
+                    <option value="Criminal" name="tc">Criminal</option>
+                    <option value="Others" name="tc">Others</option>
+                </select></td>
+			</tr>
+            <tr>
+                <td><label>Incident location</label></td>
+                <td>:</td>
+                <td><input type="text" name="il"></td>
+            </tr>
+            <tr>
+				<td><label>Complaint details</label></td>
+                <td>:</td>
+                <td><textarea rows="3" cols="22" name="cd"/></textarea></td>
+            </tr>
+            
+            <tr>
+				<td><input type="Submit" value="Submit"></td>
+			</tr>
+			</table>
+</form>
+</div>
+</body>
+</html>
